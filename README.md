@@ -1,5 +1,6 @@
 # Rest Countries API
 
+![Countries](https://user-images.githubusercontent.com/89321125/156672283-1fb3b607-15fd-49dc-9b09-476e2bac945e.PNG)
 
 Link do site: <a href="https://rest-api-countries-wa.netlify.app/">Rest Countries API</a>
 
