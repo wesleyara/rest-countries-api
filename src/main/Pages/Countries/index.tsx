@@ -31,9 +31,6 @@ export default function Countries() {
     restAPI();
   }, [API_URL]);
 
-  console.log(API_URL);
-  console.log(dataAPI);
-
   return (
     <DetailsWrapper>
       <button onClick={() => history.back()}>
