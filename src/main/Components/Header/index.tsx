@@ -2,9 +2,9 @@ import React from "react";
 import { HeaderContainer, HeaderWrapper } from "../../Styles/HeaderStyle";
 
 import { BsMoon } from "react-icons/bs";
+import { FProps } from "../Types";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function Header(props: any) {
+export default function Header(props: FProps) {
   return (
     <HeaderWrapper>
       <HeaderContainer>
