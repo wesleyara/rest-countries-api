@@ -120,4 +120,8 @@ export const CardWrapper = styled.div`
   div {
     padding: 20px 30px 30px 30px;
   }
+
+  &:hover {
+    filter: drop-shadow(0 0 10px black);
+  }
 `;

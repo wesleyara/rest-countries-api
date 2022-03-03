@@ -1,45 +1,49 @@
 import styled from "styled-components";
 
 export const DetailsWrapper = styled.section`
-  background-color: ${({ theme }) => {
-    return theme.colors.secondary;
-  }};
-  padding: 50px 20px 100px 20px;
+  padding: 50px 20px 300px 20px;
 
-  a {
-    text-decoration: none;
-    color: ${({ theme }) => {
-      return theme.colors.font;
-    }};
-  }
-
-  button {
-    padding: 8px 30px 8px 30px;
-    border: none;
-    border-radius: 5px;
+  @media screen and (max-width: 1366px) {
     background-color: ${({ theme }) => {
-      return theme.colors.primary;
+      return theme.colors.secondary;
     }};
-    color: ${({ theme }) => {
-      return theme.colors.font;
-    }};
+    padding: 50px 20px 100px 20px;
 
-    box-shadow: 0 0 2px black;
+    a {
+      text-decoration: none;
+      color: ${({ theme }) => {
+        return theme.colors.font;
+      }};
+    }
 
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+    button {
+      padding: 8px 30px 8px 30px;
+      border: none;
+      border-radius: 5px;
+      background-color: ${({ theme }) => {
+        return theme.colors.primary;
+      }};
+      color: ${({ theme }) => {
+        return theme.colors.font;
+      }};
 
-    svg {
-      font-size: 16px;
-      margin-right: 5px;
+      box-shadow: 0 0 2px black;
+
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      svg {
+        font-size: 16px;
+        margin-right: 5px;
+      }
     }
   }
 `;
 
 export const DetailsContainar = styled.section`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 50px;
   color: ${({ theme }) => {
     return theme.colors.font;
@@ -52,9 +56,23 @@ export const DetailsContainar = styled.section`
     text-overflow: ellipsis;
   }
 
+  span {
+    width: 70%;
+  }
+
   img {
-    width: 550px;
-    height: 393px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 945px) {
+    span {
+      width: 100%;
+    }
+
+    img {
+      height: 80%;
+    }
   }
 
   @media screen and (max-width: 500px) {
@@ -70,20 +88,19 @@ export const DetailsContainar = styled.section`
 `;
 
 export const ButtonContainer = styled.div`
-  margin-left: 30px;
   display: flex;
-  justify-content: flex-start;
 
   strong {
-    display: block;
-    width: 160px;
-    overflow: hidden;
+    display: flex;
+    width: 138px;
+  }
+
+  span {
+    width: 138px;
   }
 
   @media screen and (max-width: 500px) {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: 0px;
 
     strong {
       height: 25px;
@@ -119,10 +136,17 @@ export const ButtonsBx = styled.section`
 
 export const DescriptionWrapper = styled.section`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 50px;
-  width: calc(100% - 550px);
+  margin: 50px 20px 0px 20px;
+  width: 80%;
+
+  @media screen and (max-width: 945px) {
+    width: 60%;
+    div {
+      margin-top: 10px;
+    }
+  }
 
   @media screen and (max-width: 500px) {
     width: 330px;
@@ -132,13 +156,5 @@ export const DescriptionWrapper = styled.section`
     div {
       margin-top: 50px;
     }
-  }
-`;
-
-export const Space = styled.div`
-  width: 150px;
-
-  @media screen and (max-width: 500px) {
-    display: none;
   }
 `;
