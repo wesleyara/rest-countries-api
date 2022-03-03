@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { APIprops } from "../../Components/Types";
 import { BsSearch } from "react-icons/bs";
 import { Link } from "react-router-dom";
+
 import {
   HomePageWrapper,
   SearchContainer,
