@@ -8,7 +8,6 @@ import {
   DescriptionWrapper,
   DetailsContainar,
   DetailsWrapper,
-  Space,
   ButtonContainer,
   ButtonsBx,
 } from "../../Styles/CountriesStyle";
@@ -38,9 +37,9 @@ export default function Countries() {
       </button>
       {dataAPI ? (
         <DetailsContainar key={dataAPI.name}>
-          <div>
+          <span>
             <img src={dataAPI.flag} alt="" />
-          </div>
+          </span>
 
           <DescriptionWrapper>
             <div>
@@ -63,8 +62,6 @@ export default function Countries() {
               </p>
             </div>
 
-            <Space></Space>
-
             <div>
               <p>
                 <strong>Top Level Domain:</strong> {dataAPI.topLevelDomain[0]}
@@ -73,7 +70,12 @@ export default function Countries() {
                 <strong>Currencies:</strong> {dataAPI.currencies[0].name}
               </p>
               <p>
-                <strong>Languages:</strong> {dataAPI.languages[0].name}
+                <strong>Languages:</strong>{" "}
+                {dataAPI.languages.map((val, ind) => {
+                  dataAPI.languages.length === ind + 1
+                    ? `${val.name}.`
+                    : `${val.name}, `;
+                })}
               </p>
             </div>
 

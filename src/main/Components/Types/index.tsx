@@ -25,5 +25,5 @@ export interface PropsLanguages {
 }
 
 export interface FProps {
-  function: React.MouseEventHandler<HTMLElement>;
+  function: React.MouseEventHandler<HTMLDivElement>;
 }
