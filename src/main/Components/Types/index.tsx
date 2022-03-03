@@ -23,3 +23,7 @@ export interface PropsLanguages {
   name: string;
   nativeName: string;
 }
+
+export interface FProps {
+  function: React.MouseEventHandler<HTMLElement>;
+}
