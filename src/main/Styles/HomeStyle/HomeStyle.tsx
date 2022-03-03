@@ -4,6 +4,7 @@ export const HomePageWrapper = styled.div`
   background-color: ${({ theme }) => {
     return theme.colors.secondary;
   }};
+  padding-bottom: 300px;
 `;
 
 export const SearchContainer = styled.section`
@@ -47,6 +48,9 @@ export const SearchContainer = styled.section`
     border-radius: 0px 5px 5px 0px;
     width: 320px;
     font-size: 16px;
+    color: ${({ theme }) => {
+      return theme.colors.font;
+    }};
 
     &::placeholder {
       color: ${({ theme }) => {
