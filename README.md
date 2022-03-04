@@ -24,5 +24,5 @@ Link do site: <a href="https://rest-api-countries-wa.netlify.app/">Rest Countrie
 O Rest Countries API é uma aplicação que consome dados de uma API para construir todo o site. Neste projeto foi utilizando React, Styled Components, Sass, TypeScript e outras ferramentas.
 
 ## O que ele faz?
-Ele lista diversos países, mostrando a bandeira e diversos dados importantes sobre cada um, nesta aplicação é possível filtar pelo nome do país e pela sua região. 
+Ele lista diversos países, mostrando a bandeira e diversos dados importantes sobre cada um, nesta aplicação é possível filtrar pelo nome do país e pela sua região. 
 
